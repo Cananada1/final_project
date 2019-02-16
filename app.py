@@ -51,15 +51,15 @@ fig =go.Figure(data=fullchart, layout = mylayout)
 ######### Dash App ###########
 
 app = dash.Dash()
-server=app.server
-app.title = 'NDC Python Class Project'
-app.css.append_css({'external_url': 'https://codepen.io/chriddyp/pen/bWLwgP.css'}) # CSS style sheet
+server = app.server
 
-app.layout = html.Div([
-                dcc.Graph(
-                    id='scatter',
-                    figure=fig,
-                    className='twelve columns')])
+app.layout = html.Div(children=[
+    html.H1('Comparison of 10yr and CPI'),
+    dcc.Graph(
+        id='First Project',
+        figure=fig
+    )]
+)
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server()
