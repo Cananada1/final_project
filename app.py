@@ -51,6 +51,7 @@ fig =go.Figure(data=fullchart, layout = mylayout)
 ######### Dash App ###########
 
 app = dash.Dash()
+server=app.server
 app.title = 'NDC Python Class Project'
 app.css.append_css({'external_url': 'https://codepen.io/chriddyp/pen/bWLwgP.css'}) # CSS style sheet
 
