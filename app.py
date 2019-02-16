@@ -7,7 +7,7 @@ import pandas as pd
 
 
 ############Read in the Federal Reserve Data from Local Host#####
-df = pd.read_csv(r'C:\Python\Python Project\FREDData.csv')
+df = pd.read_csv('FREDData.csv')
 
 ##### Clean the Data (CPI Data starts too early)
 
